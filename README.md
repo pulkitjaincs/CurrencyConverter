@@ -9,7 +9,7 @@
 
 ## 🚀 Demo
 
-Try the live demo here: [CurrencyConverter Demo](https://pulkirjaincs.github.io/CurrencyConverter)
+Try the live demo here: [CurrencyConverter Demo](https://pulkitjaincs.github.io/CurrencyConverter)
 
 ## ✨ Key Features
 
@@ -122,9 +122,6 @@ git commit -m "Add: your feature description"
 git push origin feature/your-feature-name
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
