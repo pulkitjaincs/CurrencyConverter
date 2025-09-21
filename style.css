@@ -1,97 +1,162 @@
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  background-color: #121212;
 }
-.headw{
-    position: fixed;
-    top: 1.2rem;
-    left: 2rem;
-    color:white
+
+.headw {
+  position: fixed;
+  top: 1.2rem;
+  left: 2rem;
+  color: #bb86fc;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #02182c;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
 }
-.container{
-    background-color: #A0B9C6;
-    padding: 2rem;
-    border-radius: 1rem;
-    min-height:45vh;
-    width:100vh;
+
+.container {
+  background-color: #1e1e1e;
+  padding: 2.5rem 3rem;
+  border-radius: 1rem;
+  min-height: 50vh;
+  width: 100vh;
+  box-shadow: 0 8px 24px rgba(187, 134, 252, 0.3);
+  border: 1px solid #333;
 }
-form{
-    margin-top: 2rem 0 1rem 0;
+
+form {
+  margin: 2rem 0 1rem 0;
 }
-form select,button,input{
-    width: 100%;
-    border:none;
-    outline:none;
-    border-radius: 0.75rem;
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-form input{
-    border: 1px solid lightgray;
-    font-size: 1rem;
-    height:3rem;
-    padding-left: 0.5rem;
+
+form select:hover,
+button:hover,
+input:hover,
+form select:focus,
+button:focus,
+input:focus {
+  background-color: #3a3a3a;
+  box-shadow: 0 0 8px #bb86fc;
+  color: #bb86fc;
+  cursor: pointer;
 }
-.dropdown{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
+
+form input {
+  border: 1px solid #444;
+  height: 3rem;
+  padding-left: 0.75rem;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 @media (max-width: 780px) {
-    .dropdown{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 2rem;
-    }
-    .amm{
-        width: 100%;
-    }
-}
-.dropdown i{
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-.select-container img{
-    max-width: 2rem;
-}
-.select-container{
-    display:flex; 
-    background-color: #fff;
-    justify-content: center;
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    width: 18rem;
-    border-radius: 0.5rem;
-    border: 1px solid lightgray;
-    cursor: pointer;  
-}
-.select-container select{
-    font-size: 0.8rem;
-    width:fit-content;
-}
-.msg{
-    margin: 2rem 0 2rem 0;
-}
-form button{
-    height: 3rem;
-    background-color: #9A98B5;
-    color: #fff;
-    font-size: 1.15rem;
-    cursor: pointer;
+    margin-top: 2rem;
+  }
+
+  .amm {
+    width: 100%;
+  }
 }
 
-.insider{
-    width:16rem !important;
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #bb86fc;
 }
 
-.arrows{
-    padding-top:1.2rem;
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  background-color: #2c2c2c;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  border-radius: 0.5rem;
+  border: 1px solid #444;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select-container:hover,
+.select-container:focus {
+  background-color: #3a3a3a;
+  box-shadow: 0 0 8px #bb86fc;
+}
+
+.select-container select {
+  font-size: 0.8rem;
+  width: fit-content;
+  color: #e0e0e0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.msg {
+  margin: 2rem 0 2rem 0;
+  color: #ccc;
+  font-weight: 500;
+}
+
+form button {
+  height: 3rem;
+  background: linear-gradient(90deg, #bb86fc 0%, #3700b3 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 12px rgba(187, 134, 252, 0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover,
+form button:focus {
+  background: linear-gradient(90deg, #3700b3 0%, #bb86fc 100%);
+  box-shadow: 0 6px 16px rgba(187, 134, 252, 0.8);
+}
+
+.insider {
+  width: 16rem !important;
+}
+
+.arrows {
+  padding-top: 1.2rem;
+  color: #bb86fc;
 }
