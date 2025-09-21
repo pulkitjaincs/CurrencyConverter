@@ -131,7 +131,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Your Name**  
 - 🌐 GitHub: [@pulkitjaincs](https://github.com/pulkitjaincs)  
 - 💼 LinkedIn: [@pulkitjaincs](https://linkedin.com/in/pulkitjaincs)  
-- 📧 Email: your.email@example.com
+- 📧 Email:  pulkitjain.cse@gmail.com
 
 ---
 
