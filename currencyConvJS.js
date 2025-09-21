@@ -4,6 +4,7 @@ const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg")
+const exchangeBtn = document.querySelector(".fa-arrow-right-arrow-left.arrows");
 
 for(let select of dropdowns){
     for(let currCode in currency_list){
@@ -48,5 +49,19 @@ btn.addEventListener("click", (evt)=>{
     getExchangeVal();
 });
 window.addEventListener("load", ()=>{
+    getExchangeVal();
+});
+
+exchangeBtn.addEventListener("click", () => {
+    // Swap the selected values of fromCurr and toCurr
+    let temp = fromCurr.value;
+    fromCurr.value = toCurr.value;
+    toCurr.value = temp;
+
+    // Update the flags
+    updateFlag(fromCurr);
+    updateFlag(toCurr);
+
+    // Update the exchange value display
     getExchangeVal();
 });
