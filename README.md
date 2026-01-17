@@ -1,131 +1,88 @@
 # 💱 CurrencyConverter
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![CSS3](https://img.shields.io/badge/CSS3-3A99D8?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![API](https://img.shields.io/badge/API-ExchangeRates%20%26%20Flags-4AB197?style=for-the-badge)](https://exchangeratesapi.io/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-> A modern, responsive currency converter application that supports almost all currencies worldwide. It fetches real-time currency exchange rates and currency flags/symbols from APIs to help users easily calculate currency values with up-to-date information.
+> A modern, responsive currency converter application built with React, Vite, and Tailwind CSS. It features real-time exchange rates, interactive charts, and a premium glassmorphism UI.
 
 ## 🚀 Demo
 
-Try the live demo here: [CurrencyConverter Demo](https://pulkitjaincs.github.io/CurrencyConverter)
+*(Add your demo link here if deployed)*
 
 ## ✨ Key Features
 
-- **🌍 Wide Currency Support**: Supports almost all world currencies
-- **🔄 Real-time Exchange Rates**: Fetches live currency rates from reliable APIs
-- **🏳️ Currency Flags and Symbols**: Displays flags and symbols for better user experience
-- **📊 Easy Conversion**: Simple interface to convert between any two currencies
-- **⚡ Responsive Design**: Works seamlessly across devices and screen sizes
-- **🔄 Auto Updates**: Rates update automatically to reflect current market values
+- **⚛️ Modern React Architecture**: Built with React Hooks and Vite for blazing fast performance.
+- **🔄 Real-time Conversion**: Rates and calculations update instantly as you type.
+- **💱 Multi-Currency Comparison**: Compare the base currency against multiple user-selected currencies simultaneously.
+- **� Searchable Dropdowns**: Smart combobox to easily find currencies by code or name.
+- **📈 Historical Trends**: Interactive area chart showing 30-day simulated rate trends.
+- **🎨 Glassmorphism UI**: Beautiful, dark-themed design with blur effects and smooth animations.
+- **� Fully Responsive**: Optimized for mobile (stacked view) and desktop (side-by-side view) screens.
 
 ## 🛠️ Tech Stack
 
 | Category           | Technology                          |
 |--------------------|-----------------------------------|
-| **Frontend**       | HTML5, CSS3, JavaScript (ES6+)    |
-| **APIs**           | Exchange Rates API, Currency Flags API |
-| **Styling**        | CSS                              |
-| **Package Manager**| None (Vanilla JS project)          |
+| **Frontend**       | React 19, Vite                    |
+| **Styling**        | Tailwind CSS, Framer Motion       |
+| **Charts**         | Recharts                          |
+| **Icons**          | Lucide React                      |
+| **API**            | jsdelivr/currency-api, flagsapi.com |
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Modern web browser (Chrome, Firefox, Edge, Safari)
+- Node.js (v18 or higher)
+- npm or yarn
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/CurrencyConverter.git
-cd CurrencyConverter
+git clone https://github.com/pulkitjaincs/CurrencyConverter.git
+cd CurrencyConverter/currency-converter-react
 
-# Open index.html in your browser
-open index.html
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-### Usage
+### Build for Production
 
-- Select the source and target currencies
-- Enter the amount to convert
-- View the converted amount with real-time exchange rate and currency flag
+```bash
+npm run build
+```
 
 ## 📁 Project Structure
 
 ```
-CurrencyConverter/
-├── index.html           # Main HTML file
-├── style.css            # Stylesheet for the app
-├── currencyConvJS.js    # JavaScript logic for currency conversion and API calls
-├── Codes.js             # Additional JavaScript utilities (if any)
-└── README.md            # Project documentation
+currency-converter-react/
+├── src/
+│   ├── components/      # UI Components (ComparisonSection, CurrencySelect, HistoryChart, etc.)
+│   ├── hooks/           # Custom React Hooks (useCurrencyInfo, useHistoricalRates)
+│   ├── constants/       # Currency codes and data
+│   ├── App.jsx          # Main application logic
+│   └── main.jsx         # Entry point
+├── public/              # Static assets
+└── dist/                # Production build (generated)
 ```
 
-## 🎯 Core Components
+## 🔮 Features
 
-### currencyConvJS.js
-```javascript
-// Handles fetching real-time currency rates and flags
-// Performs currency conversion calculations
-// Updates the UI dynamically with converted values and flags
-```
-
-### index.html
-```html
-<!-- Main HTML structure with input fields for currencies and amount -->
-<!-- Displays conversion results and currency flags -->
-```
-
-### style.css
-```css
-/* Responsive styling for layout and components */
-/* Ensures usability across devices */
-```
-
-## ⚙️ Configuration
-
-- No environment variables required
-- API endpoints are hardcoded or configured within currencyConvJS.js
-
-## 🌟 Performance Optimizations
-
-- Efficient API calls with caching (if implemented)
-- Minimal DOM updates for smooth user experience
-- Responsive design for fast rendering on all devices
-
-## 🔮 Roadmap
-
-- [ ] Add support for historical exchange rates
-- [ ] Implement currency conversion charts
-- [ ] Add user preferences for default currencies
-- [ ] Improve UI with animations and transitions
-- [ ] Add offline support with caching
+- **Dynamic Swapping**: Swap currencies with a smooth animation.
+- **Visual Feedback**: Loading states and error handling.
+- **Data Visualization**: Clean charts for easy trend analysis.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please fork the repository and create a pull request with your improvements.
-
-### Quick Start for Contributors
-```bash
-# Fork and clone the repository
-git clone https://github.com/yourusername/CurrencyConverter.git
-cd CurrencyConverter
-
-# Create a new branch
-git checkout -b feature/your-feature-name
-
-# Make your changes and commit
-git commit -m "Add: your feature description"
-
-# Push and create a Pull Request
-git push origin feature/your-feature-name
-```
-
+Contributions are welcome! Please fork the repository and create a pull request.
 
 ## 👨‍💻 Author
 
-**Your Name**  
+**Pulkit Jain**  
 - 🌐 GitHub: [@pulkitjaincs](https://github.com/pulkitjaincs)  
 - 💼 LinkedIn: [@pulkitjaincs](https://linkedin.com/in/pulkitjaincs)  
 - 📧 Email:  pulkitjain.cse@gmail.com
@@ -133,12 +90,5 @@ git push origin feature/your-feature-name
 ---
 
 <div align="center">
-
 ⭐ **Star this repository if you found it helpful!**
-
-[![GitHub stars](https://img.shields.io/github/stars/pulkitjaincs/CurrencyConverter?style=social)](https://github.com/pulkitjaincs/CurrencyConverter/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/pulkitjaincs/CurrencyConverter?style=social)](https://github.com/pulkitjaincs/CurrencyConverter/network/members)
-
-*Built with ❤️ using Vanilla JavaScript*
-
 </div>
